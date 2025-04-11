@@ -46,7 +46,7 @@
 
 ![Footer](./src/assets/vue-movie-app___Footer.gif)
 
-- 해당 프로젝트 Repository 이동 기능능
+- 해당 프로젝트 Repository 이동 기능
 
 <br>
 
