@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Hwaseong-si",
+			"country": {
+				"code": "KR",
+				"name": "South Korea"
+			},
+			"subdivision": {
+				"code": "41",
+				"name": "Gyeonggi-do"
+			},
+			"timezone": "Asia/Seoul",
+			"latitude": 37.2072,
+			"longitude": 126.8168,
+			"postalCode": "18261"
+		},
+		"timestamp": 1744347400004
+	}
+}
