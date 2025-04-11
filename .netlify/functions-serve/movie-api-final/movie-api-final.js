@@ -1,1 +1,0 @@
-module.exports = require('./api/movie-api-final.js')

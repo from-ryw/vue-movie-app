@@ -25,7 +25,7 @@ watch( () => route.path,
         </li>
       </ul>
     </nav>
-    <router-link to="/" class="user">
+    <router-link to="/about" class="user">
       <img src="@/assets/user.png" alt="User">
     </router-link>
   </header>

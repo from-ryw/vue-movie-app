@@ -25,7 +25,7 @@ export const useMovieStore = defineStore('movie', {
 
         try {
           // const res = await axios.post(`https://omdbapi.com?apikey=발급받은APIKEY&s=${this.searchText}&page=${page}`);
-          const res = await axios.post('/api/movie-api-final', {
+          const res = await axios.post('/api/movie-api', {
             title: this.searchText,
             page
           });
@@ -53,7 +53,7 @@ export const useMovieStore = defineStore('movie', {
       this.isLoading = true;
       try {
         // const res = await axios.post(`https://omdbapi.com?apikey=발급받은APIKEY&i=${id}&plot=full`);
-        const res = await axios.post('/api/movie-api-final', {
+        const res = await axios.post('/api/movie-api', {
           id
         });
         this.movie = res.data;
