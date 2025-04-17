@@ -29,14 +29,11 @@ export const useMovieStore = defineStore('movie', {
             title: this.searchText,
             page
           });
-          console.log(res.data);
           if (res.data.Response === 'True') {
             this.movies = [
               ...this.movies,
               ...res.data.Search
             ];
-            console.log("1111");
-            console.log(this.movies);
             this.pageMax = Math.ceil(Number(res.data.totalResults) / 10);
           } else {
             this.message = res.data.Error;
@@ -44,9 +41,9 @@ export const useMovieStore = defineStore('movie', {
 
         } catch (error) {
           console.log('searchMovies error:', error);
+        } finally {
+          this.isLoading = false;
         }
-
-        this.isLoading = false;
       }
     },
     async getMovieDetails(id) {
@@ -62,8 +59,9 @@ export const useMovieStore = defineStore('movie', {
         }
       } catch (error) {
         console.log('getMovieDetails error:', error);
+      } finally {
+        this.isLoading = false;
       }
-      this.isLoading = false;
     }
   },
   persist: {
